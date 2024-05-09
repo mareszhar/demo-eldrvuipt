@@ -1,16 +1,9 @@
 <script setup lang="ts">
-import { appName } from '~/constants'
-
-useHead({
-  title: appName,
-})
+const greeting = ref('Hello world')
 </script>
 
-<template>
-  <VitePwaManifest />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+<template lang="pug">
+h1 {{ greeting }}
 </template>
 
 <style>
